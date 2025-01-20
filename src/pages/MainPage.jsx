@@ -95,33 +95,40 @@ function MainPage() {
       </div>
     </div>
     <div className='h-96 w-full mt-9'>
-      <div className='flex justify-center text-3xl font-bold'>
-      Your Gateway of Smart Investing.
-      </div>
-      <div className='flex justify-center text-xl font-medium mb-10'>
-      Highlighted features that simplify and enhance the investing experience.
-      </div>
-      {/* Cards */}
-      <div className="flex justify-center">
-        {/* Double Card */}
-        <div className="flex gap-x-40">
-          {/* Card Container */}
-          <div className="relative w-64 h-64 group">
-            {/* Yellow Card (Bottom & Back) */}
-            <div className="rounded-lg absolute bottom-0 left-0 w-52 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:rotate-3"></div>
-            
-            {/* White Card (Front) */}
-            <div className="rounded-lg absolute top-0 left-0 w-52 h-56 bg-[#E6E6E6] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
-          </div>
-
-          {/* Other Cards */}
-          <div className="w-56 h-64 bg-[#E6E6E6]"></div>
-          <div className="w-56 h-64 bg-[#E6E6E6]"></div>
-        </div>
-      </div>
-
-
+  <div className='flex justify-center text-3xl font-bold'>
+    Your Gateway of Smart Investing.
+  </div>
+  <div className='flex justify-center text-xl font-medium mb-10'>
+    Highlighted features that simplify and enhance the investing experience.
+  </div>
+  <div className="grid grid-cols-3 gap-x-10 gap-y-10 w-full justify-center  mt-10 ml-16 m-12"> {/* Added mb-12 */}
+    <div className="relative w-64 h-72 group">
+      <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+      <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] hover:bg-[#1d644f] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
     </div>
+    <div className="relative w-64 h-72 group">
+      <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+      <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] hover:bg-[#1d644f] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
+    </div>
+    <div className="relative w-64 h-72 group">
+      <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+      <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] hover:bg-[#1d644f] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
+    </div>
+    <div className="relative w-64 h-72 group">
+      <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+      <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] hover:bg-[#1d644f] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
+    </div>
+    <div className="relative w-64 h-72 group">
+      <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+      <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] hover:bg-[#1d644f] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
+    </div>
+    <div className="relative w-64 h-72 group">
+      <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+      <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] hover:bg-[#1d644f] transition-transform duration-300 ease-in-out group-hover:-translate-y-5"></div>
+    </div>
+  </div>
+</div>
+
 
       <Footer />
     </>

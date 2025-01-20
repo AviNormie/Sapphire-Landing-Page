@@ -3,9 +3,9 @@ import support from '../assets/support.png'
 function Footer() {
   return (
     <>
-      <div className="h-36 flex items-center gap-x-44 bg-gradient-to-b from-white to-[#83C5BE]">
+      <div className="h-36 mt-96 flex items-center gap-x-44 bg-gradient-to-b from-white to-[#83C5BE]">
         <img className='h-28 w-28 ml-20' src={support} alt="" />
-        <div>
+        <div className='hidden lg:block'>
             <div>Get Support Anytime, Anywhere</div>
             <div>We’re just a call, email, or message away to help you with your trading journey.</div>
             <div>Have any queries? Contact Support</div>
