@@ -12,7 +12,7 @@ function Footer() {
         </div>
         <button className='py-3 px-8 bg-[#152F46] text-white font-semibold rounded-full'>Lets Connect</button>
       </div>
-      <div className="h-[900px] bg-[#064D51]">
+      <div className="h-[700px] bg-[#064D51]">
         <div className="grid grid-cols-5 gap-8 text-white px-12 py-8">
           <div>
             <div className="font-bold text-lg mb-4">Legal Name</div>
