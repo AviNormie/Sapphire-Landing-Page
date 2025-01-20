@@ -11,6 +11,10 @@ import three from '../assets/three.png'
 import four from '../assets/four.png'
 import five from '../assets/five.png'
 import six from '../assets/six.png'
+import sumid from '../assets/sumid.png'
+import check from '../assets/check.png'
+import arrow from '../assets/arrow.png'
+import vector from '../assets/vector.png'
 function MainPage() {
   return (
     <>
@@ -258,9 +262,65 @@ function MainPage() {
 
 
 </div>
-<div className='min-h-96 bg-[#DAEAEB] '>
+<div className=' text-3xl min-h-80 mt-6 bg-[#DAEAEB] '>
+  <div className='flex justify-center'>
+    <div className='ml-20'>
+      <div className='mt-3 mb-4   '>How-to Guides for <span className='text-[#064D51] font-bold'>Financial Success</span></div>
+      <div className='text-[#5B5B5B] text-xl'>Learn at your own pace with beginner to expert resources.</div>
+    </div>
   
+  <img src={sumid} alt="" className='h-[115px] w-[120px] mt-2 ml-40 -mr-28' />
+  </div>
+{/* Cards Grid */}
+<div className="flex justify-center gap-7 mt-10">
+  <div className="relative group">
+    {/* Background card - black border only */}
+    <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
+                    group-hover:-rotate-3 group-hover:-translate-y-2 
+                    transition-transform duration-300 ease-in-out">
+    </div>
+
+    {/* Foreground card - green gradient */}
+    <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
+                    bg-gradient-to-b from-teal-900 to-teal-600
+                    group-hover:rotate-3 group-hover:-translate-y-4 
+                    transition-transform duration-300 ease-in-out 
+                    shadow-lg p-6">
+      <div className="flex items-start justify-between">
+        <div>
+          {/* "How to" text with arrow and play icon */}
+          <div className="flex items-center gap-2 text-white font-bold text-lg">
+            <span>How to</span>
+            <img src={arrow} alt="Arrow" className="w-6 h-4" />
+            <img src={vector} alt="Play Icon" className="w-12 h-12 " />
+          </div>
+          {/* "Create a Budget" text below */}
+          <div className="text-white mt-1 text-sm">Create a Budget</div>
+        </div>
+
+        {/* Centered check image container */}
+        <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
+          <img 
+            src={check} 
+            alt="Checklist Icon" 
+            className="w-16 h-16 object-contain"
+          />
+        </div>
+      </div>
+
+      <div className="absolute bottom-4 left-6">
+        <span className="bg-black text-white text-sm px-3 py-1 rounded-full">
+          Beginner
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+</div>
+
 </div>
       {/* <Footer /> */}
     </>
