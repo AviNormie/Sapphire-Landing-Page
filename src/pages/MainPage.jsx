@@ -5,6 +5,7 @@ import Coin from '../assets/Coin.png';
 import banking from '../assets/banking.png'
 import Footer from '../components/Footer';
 import calc from '../assets/calc.png'
+import image from '../assets/image.png'
 function MainPage() {
   return (
     <>
@@ -113,16 +114,30 @@ function MainPage() {
   
   {/* Card 2 */}
   <div className="relative w-64 h-72 group">
+  {/* Decorative Background */}
   <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
+  
+  {/* Main Card */}
   <div className="rounded-lg absolute top-0 left-0 w-72 h-64 bg-[#E6E6E6] transition-transform duration-300 ease-in-out group-hover:-translate-y-5 group-hover:bg-[#1d644f]">
-    <span className="transition-opacity duration-100 ease-in-out group-hover:opacity-0">hiiii</span>
-  </div>
-  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300">
-    <span className="text-xl">Card 2 Text</span>
+    {/* Content Before Hover */}
+    <div className="absolute inset-0 flex flex-col items-start justify-start px-6 py-6 space-y-4 text-left">
+      <img src={image} alt="Stocks" className="w-16 h-16 mb-2" />
+      <h2 className="text-3xl font-bold text-black group-hover:text-white">Stocks</h2>
+      <p className="text-lg text-gray-600 transition-opacity duration-300 group-hover:opacity-0">
+        Trade seamlessly and build your portfolio with confidence.
+      </p>
+    </div>
+    
+    {/* Content After Hover */}
+    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <button className="px-4 py-2  bg-white text-[#1d644f] font-semibold rounded-full hover:bg-gray-200">
+        Learn More
+      </button>
+    </div>
   </div>
 </div>
 
-  
+
   {/* Card 3 */}
   <div className="relative w-64 h-72 group">
     <div className="rounded-lg absolute bottom-0 left-0 w-72 h-32 bg-yellow-400 transition-transform duration-300 ease-in-out group-hover:-rotate-6"></div>
