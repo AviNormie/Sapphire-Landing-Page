@@ -14,8 +14,14 @@ import six from '../assets/six.png'
 import sumid from '../assets/sumid.png'
 import check from '../assets/check.png'
 import arrow from '../assets/arrow.png'
+// import arrow2 from '../assets/arrow2.png'
 import vector from '../assets/vector.png'
 import smallArrow from '../assets/smallArrow.png'
+import Frame1  from '../assets/Frame1.png'
+import frame2  from '../assets/frame2.png'
+import frame3  from '../assets/frame3.png'
+import frame4  from '../assets/frame4.png'
+// import frame5  from '../assets/frame5.png'
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
 function MainPage() {
@@ -26,13 +32,13 @@ function MainPage() {
       title: "Stock Market Basics",
       description: "Get insights into the fundamentals of the stock market and how to start",
       progress: "Progress Required: 1.5/3 modules completed",
-      image: "/path-to-your-stock-market-image.jpg"
+      image: Frame1
     },
     {
       title: "Understanding Cryptocurrency",
       description: "Description text here goes under title crypto",
       progress: "Progress Required: 1.5/3 modules completed",
-      image: "/path-to-your-crypto-image.jpg"
+      image: frame2
     }
   ];
 
@@ -42,21 +48,21 @@ function MainPage() {
       description: "Step by step guide to build a budget that helps you manage your finances better",
       author: "Emily Smith",
       date: "Jan 5, 2025",
-      image: "/path-to-your-budget-image.jpg"
+      image: frame3
     },
     {
       title: "Stock Market 101: A Beginner's Guide to Investing",
       description: "Learn the basics of stock market, its key terms and how to get started",
       author: "John Doe",
       date: "Jan 10, 2025",
-      image: "/path-to-your-stock-guide-image.jpg"
+      image: frame4
     }
   ];
 
   const faqs = [
     {
       question: "How do I open a trading and Demat account with your firm?",
-      answer: "Your answer text here"
+      answer: "Are you Testing me?"
     },
     {
       question: "What services do you offer?",
@@ -64,7 +70,7 @@ function MainPage() {
     },
     {
       question: "Are my investments safe with your firm?",
-      answer: "Your answer text here"
+      answer: "Are you Testing me?"
     }
   ];
 
@@ -329,7 +335,7 @@ function MainPage() {
   <img src={sumid} alt="" className='h-[115px] w-[120px] mt-2 ml-40 -mr-28' />
   </div>
 {/* Cards Grid */}
-<div className="flex justify-center gap-36 mt-10 mb-4">
+<div className="flex justify-center gap-36  mt-10 mb-4">
   {/* Card 1 */}
   <div className="relative group">
     {/* Background card - black border only */}
@@ -474,43 +480,58 @@ Want to explore more insights?
       <div className="grid grid-cols-2 gap-8">
         {/* Latest Modules */}
         <div>
-          <h2 className="text-xl font-bold text-teal-900 mb-4">Latest Modules</h2>
-          <div className="space-y-4">
-            {modules.map((module, index) => (
-              <div key={index} className="border rounded-lg p-4 shadow-sm">
-                <img 
-                  src={module.image} 
-                  alt={module.title} 
-                  className="w-full h-32 object-cover rounded-lg mb-3"
-                />
-                <h3 className="font-semibold mb-2">{module.title}</h3>
-                <p className="text-sm text-gray-600 mb-2">{module.description}</p>
-                <p className="text-xs text-gray-500">{module.progress}</p>
-              </div>
-            ))}
-          </div>
+  <h2 className="text-3xl font-bold text-[#064D51] mb-4">Latest Modules</h2>
+  <div className="space-x-4 flex">
+    {modules.map((module, index) => (
+      <div
+        key={index}
+        className="border hover:scale-105  transition duration-300  rounded-md h-[300px] md:h-[350px] w-1/2 p-4 shadow-sm flex flex-col justify-between"
+      >
+        <div>
+          <img
+            src={module.image}
+            alt={module.title}
+            className="w-full h-32 object-cover mt-4 rounded-lg mb-5"
+          />
+          <h3 className="font-semibold">{module.title}</h3>
+          <p className="hidden md:block text-sm mt-5 text-gray-600 mb-2">
+            {module.description}
+          </p>
+          <p className="hidden md:block text-xs text-gray-500">{module.progress}</p>
         </div>
+        <div className="flex text-sm text-blue-600  self-end">Continue Learning <span className=' ml-1 font-semibold'>></span>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
 
         {/* Latest Blogs */}
         <div>
-          <h2 className="text-xl font-bold text-teal-900 mb-4">Latest Blogs</h2>
-          <div className="space-y-4">
-            {blogs.map((blog, index) => (
-              <div key={index} className="border rounded-lg p-4 shadow-sm">
-                <img 
-                  src={blog.image} 
-                  alt={blog.title} 
-                  className="w-full h-32 object-cover rounded-lg mb-3"
-                />
-                <h3 className="font-semibold mb-2">{blog.title}</h3>
-                <p className="text-sm text-gray-600 mb-2">{blog.description}</p>
-                <p className="text-xs text-gray-500">
-                  Author: {blog.author} | Published: {blog.date}
-                </p>
-              </div>
-            ))}
-          </div>
+  <h2 className="text-3xl font-bold text-[#064D51] mb-4">Latest Blogs</h2>
+  <div className="space-y-4">
+    {blogs.map((blog, index) => (
+      <div
+        key={index}
+        className="border hover:scale-105 transition duration-300 rounded-md p-4 shadow-sm flex flex-col md:flex-row items-center md:items-start w-full"
+      >
+        <div className="flex-1">
+          <h3 className="font-semibold mb-2">{blog.title}</h3>
+          <p className="text-sm text-gray-600 mb-2">{blog.description}</p>
+          <p className="text-xs text-gray-500 mb-3">
+            Author: {blog.author} | Published: {blog.date}
+          </p>
         </div>
+        <img
+          src={blog.image}
+          alt={blog.title}
+          className="w-48 h-32 object-cover rounded-lg md:ml-4"
+        />
+      </div>
+    ))}
+  </div>
+</div>
       </div>
 
       {/* FAQs Section */}
