@@ -14,7 +14,7 @@ import six from '../assets/six.png'
 import sumid from '../assets/sumid.png'
 import check from '../assets/check.png'
 import arrow from '../assets/arrow.png'
-// import arrow2 from '../assets/arrow2.png'
+import arrow2 from '../assets/arrow2.png'
 import vector from '../assets/vector.png'
 import smallArrow from '../assets/smallArrow.png'
 import Frame1  from '../assets/Frame1.png'
@@ -94,7 +94,7 @@ function MainPage() {
               <div className=''>
               <input
                 type="text"
-                placeholder="Enter mobile number"
+                placeholder="  Enter mobile number"
                 className="p-3 w-[430px] text-lg rounded-full border  "
               />
               <button className="w-[150px] ml-3 font-medium text-white text-lg py-3  rounded-full bg-[#152F46] hover:bg-[#18405d] transition-colors">SIGNUP NOW</button>
@@ -121,21 +121,176 @@ function MainPage() {
          <div className='text-lg mt-2'>Place trades at just ₹20 per order</div>
          <button className='text-[#152F46] text-lg mt-4 px-5 py-2 border border-[#152F46] rounded-full hover:text-white hover:bg-[#152F46] transition duration-300'>View Pricing</button>
         </div>
-        <div className=' min-w-[320px] h-full'>
-          <div className=' flex items-center justify-center mt-[74px] max-w-[270px] h-72 rounded-lg border border-slate-500 shadow-2xl'>
-          <div className=''>
-              <img className='h-16 w-16 ' src={banking} alt="" />
-              <div className=' flex items-center justify-center border rounded-full py-2 px-5 -ml-24'>Opening</div>
+        <div className=' min-w-[340px] h-full'>
+          <div className="min-w-[340px]  h-full">
+            {/* card-1 */}
+            <div className="group flex items-center justify-center mt-[74px] max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
+              {/* Default Content */}
+          <div className="absolute inset-0 flex items-center justify-between px-4 transition-opacity duration-300 group-hover:opacity-0">
+            {/* Left Section */}
+            <div className="flex flex-col justify-center">
+              {/* Button */}
+              <div className="flex justify-center border mt-10 rounded-full py-2 px-5 text-[#064D51] border-slate-400 mb-4">
+                Opening
+              </div>
+              {/* Price */}
+              <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
+                ₹99*
+              </div>
+              <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+              
+            </div>
+
+            {/* Right Section */}
+            <div>
+              <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
             </div>
           </div>
-          <div className='flex items-center justify-center mt-[45px] max-w-[270px] h-72 rounded-lg bg-slate-700'>
-            <div>
-              <div>Opening</div>
+
+
+
+              {/* Hover Content */}
+              <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+                <div className="text-slate-100">
+                  <div className='text-sm ml-2 mt-2 font-thin'>
+                    <p>Enjoy a fast hassle-free signup process and </p>
+                    <p>unlock access to a world of investment </p>
+                    <p>opportunities without any upfront cost</p>
+                    <p className='mt-2'>✅ no paper work required- 100% online process</p>
+                    <p className=''>✅ no paper work required- 100% online process</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            {/* card 2 */}
+      <div className="group flex items-center justify-center mt-[45px] max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
+          {/* Default Content */}
+      <div className="absolute inset-0 flex items-center justify-between px-4 transition-opacity duration-300 group-hover:opacity-0">
+        {/* Left Section */}
+        <div className="flex flex-col justify-center">
+          {/* Button */}
+          <div className="flex justify-center border mt-10 rounded-full py-2 px-5 text-[#064D51] border-slate-400 mb-4">
+            Opening
+          </div>
+          {/* Price */}
+          <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
+            ₹99*
+          </div>
+          <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+          
+        </div>
+
+        {/* Right Section */}
+        <div>
+          <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
+        </div>
+      </div>
+
+
+
+          {/* Hover Content */}
+          <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+            <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+            <div className="text-slate-100">
+              <div className='text-sm ml-2 mt-2 font-thin'>
+                <p>Enjoy a fast hassle-free signup process and </p>
+                <p>unlock access to a world of investment </p>
+                <p>opportunities without any upfront cost</p>
+                <p className='mt-2'>✅ no paper work required- 100% online process</p>
+                <p className=''>✅ no paper work required- 100% online process</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className='min-w-[390px] bg-pink-700 h-96'>
+        </div>
+        {/* righst side blocck */}
+        <div className='min-w-[390px] h-96'>
+          <div className="min-w-[340px]  h-full">
+            {/* card-1 */}
+            <div className="group flex items-center justify-center  max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
+              {/* Default Content */}
+          <div className="absolute inset-0 flex items-center justify-between px-4 transition-opacity duration-300 group-hover:opacity-0">
+            {/* Left Section */}
+            <div className="flex flex-col justify-center">
+              {/* Button */}
+              <div className="flex justify-center border mt-10 rounded-full py-2 px-5 text-[#064D51] border-slate-400 mb-4">
+                Opening
+              </div>
+              {/* Price */}
+              <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
+                ₹99*
+              </div>
+              <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+              
+            </div>
 
+            {/* Right Section */}
+            <div>
+              <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
+            </div>
+          </div>
+
+
+
+              {/* Hover Content */}
+              <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+                <div className="text-slate-100">
+                  <div className='text-sm ml-2 mt-2 font-thin'>
+                    <p>Enjoy a fast hassle-free signup process and </p>
+                    <p>unlock access to a world of investment </p>
+                    <p>opportunities without any upfront cost</p>
+                    <p className='mt-2'>✅ no paper work required- 100% online process</p>
+                    <p className=''>✅ no paper work required- 100% online process</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            {/* card 2 */}
+      <div className="group flex items-center justify-center  max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
+          {/* Default Content */}
+      <div className="absolute inset-0 flex items-center justify-between px-4 transition-opacity duration-300 group-hover:opacity-0">
+        {/* Left Section */}
+        <div className="flex flex-col justify-center">
+          {/* Button */}
+          <div className="flex justify-center border mt-10 rounded-full py-2 px-5 text-[#064D51] border-slate-400 mb-4">
+            Opening
+          </div>
+          {/* Price */}
+          <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
+            ₹99*
+          </div>
+          <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+          
+        </div>
+
+        {/* Right Section */}
+        <div>
+          <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
+        </div>
+      </div>
+
+
+
+          {/* Hover Content */}
+          <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+            <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+            <div className="text-slate-100">
+              <div className='text-sm ml-2 mt-2 font-thin'>
+                <p>Enjoy a fast hassle-free signup process and </p>
+                <p>unlock access to a world of investment </p>
+                <p>opportunities without any upfront cost</p>
+                <p className='mt-2'>✅ no paper work required- 100% online process</p>
+                <p className=''>✅ no paper work required- 100% online process</p>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
         </div>
 
@@ -157,8 +312,9 @@ function MainPage() {
         Brokerage Calculators
       </div>
     </div>
-    <div className="text-[#2F7FFF] mt-7">
+    <div className="flex font-medium hover:cursor-pointer text-[#2F7FFF] mt-7">
       EXPLORE CALCULATORS
+      <img src={arrow2} alt="arrow" className='mt-1 ml-1 h-4 w-3' />
     </div>
   </div>
 
@@ -338,13 +494,11 @@ function MainPage() {
 <div className="flex justify-center gap-36  mt-10 mb-4">
   {/* Card 1 */}
   <div className="relative group">
-    {/* Background card - black border only */}
     <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
                     group-hover:-rotate-3 group-hover:-translate-y-2 
                     transition-transform duration-300 ease-in-out">
     </div>
 
-    {/* Foreground card - green gradient */}
     <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
                     bg-gradient-to-b from-teal-900 to-teal-600
                     group-hover:rotate-3 group-hover:-translate-y-4 
@@ -352,17 +506,14 @@ function MainPage() {
                     shadow-lg p-6">
       <div className="flex items-start justify-between">
         <div>
-          {/* "How to" text with arrow and play icon */}
           <div className="flex items-center mt-3 gap-2 text-white font-bold text-lg">
             <span>How to</span>
             <img src={arrow} alt="Arrow" className="w-6 h-4" />
             <img src={vector} alt="Play Icon" className="w-12 h-12 " />
           </div>
-          {/* "Create a Budget" text below */}
           <div className="text-white mt-1 text-sm">Create a Budget</div>
         </div>
 
-        {/* Centered check image container */}
         <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
           <img 
             src={check} 
@@ -382,13 +533,11 @@ function MainPage() {
 
   {/* Card 2 */}
   <div className="relative group">
-    {/* Background card - black border only */}
     <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
                     group-hover:-rotate-3 group-hover:-translate-y-2 
                     transition-transform duration-300 ease-in-out">
     </div>
 
-    {/* Foreground card - green gradient */}
     <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
                     bg-gradient-to-b from-teal-900 to-teal-600
                     group-hover:rotate-3 group-hover:-translate-y-4 
@@ -396,17 +545,14 @@ function MainPage() {
                     shadow-lg p-6">
       <div className="flex items-start justify-between">
         <div>
-          {/* "How to" text with arrow and play icon */}
           <div className="flex items-center mt-3 gap-2 text-white font-bold text-lg">
             <span>How to</span>
             <img src={arrow} alt="Arrow" className="w-6 h-4" />
             <img src={vector} alt="Play Icon" className="w-12 h-12 " />
           </div>
-          {/* "Create a Budget" text below */}
           <div className="text-white mt-1 text-sm">Create a Budget</div>
         </div>
 
-        {/* Centered check image container */}
         <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
           <img 
             src={check} 
@@ -426,13 +572,11 @@ function MainPage() {
 
   {/* Card 3 */}
   <div className="relative group">
-    {/* Background card - black border only */}
     <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
                     group-hover:-rotate-3 group-hover:-translate-y-2 
                     transition-transform duration-300 ease-in-out">
     </div>
 
-    {/* Foreground card - green gradient */}
     <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
                     bg-gradient-to-b from-teal-900 to-teal-600
                     group-hover:rotate-3 group-hover:-translate-y-4 
@@ -440,17 +584,14 @@ function MainPage() {
                     shadow-lg p-6">
       <div className="flex items-start justify-between">
         <div>
-          {/* "How to" text with arrow and play icon */}
           <div className="flex items-center mt-3 gap-2 text-white font-bold text-lg">
             <span>How to</span>
             <img src={arrow} alt="Arrow" className="w-6 h-4" />
             <img src={vector} alt="Play Icon" className="w-12 h-12 " />
           </div>
-          {/* "Create a Budget" text below */}
           <div className="text-white mt-1 text-sm">Create a Budget</div>
         </div>
 
-        {/* Centered check image container */}
         <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
           <img 
             src={check} 
@@ -468,11 +609,11 @@ function MainPage() {
     </div>
   </div>
 </div>
-<span className='text-2xl font-semibold ml-16 '>
+<span className='text-xl font-semibold ml-20 '>
 Want to explore more insights?
 </span>
-<div className='text-xl ml-16 text-[#858585]'>Watch our complete video library for market trends, financial tips, and product tutorials.</div>
-<div className='flex text-[#2F7FFF] font-medium text-xl ml-16 '>Explore More Videos <img src={smallArrow} alt="arrow" className='cursor-pointer h-4 w-3 ml-3 mt-2' /> </div> 
+<div className='text-lg ml-20 text-[#858585]'>Watch our complete video library for market trends, financial tips, and product tutorials.</div>
+<div className='flex text-[#2F7FFF] font-medium text-lg ml-20 '>Explore More Videos <img src={smallArrow} alt="arrow" className='cursor-pointer h-4 w-3 ml-3 mt-2' /> </div> 
 
 
 </div>
@@ -499,7 +640,7 @@ Want to explore more insights?
           </p>
           <p className="hidden md:block text-xs text-gray-500">{module.progress}</p>
         </div>
-        <div className="flex text-sm text-blue-600  self-end">Continue Learning <span className=' ml-1 font-semibold'>></span>
+        <div className="flex text-sm text-blue-600  self-end">Continue Learning <img src={arrow2} alt=""className='h-3 w-3 mt-1 ml-1' />
         </div>
       </div>
     ))}
