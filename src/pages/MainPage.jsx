@@ -113,16 +113,16 @@ function MainPage() {
         <div className='flex text-2xl font-semibold '>
         <div className='min-w-[470px] h-auto'>
          <img src={Coin} alt="" />
-         <div className='mt-7'>Transparent Pricing 
+         <div className='mt-7  text-4xl'>Transparent Pricing 
          </div>
-         <div className=''>
+         <div className='text-4xl mt-2'>
           <span>With</span> <span className='text-[#064D51]'>No Hidden Charges</span>
          </div>
-         <div className='text-lg mt-2'>Place trades at just ₹20 per order</div>
-         <button className='text-[#152F46] text-lg mt-4 px-5 py-2 border border-[#152F46] rounded-full hover:text-white hover:bg-[#152F46] transition duration-300'>View Pricing</button>
+         <div className='text-2xl mt-6'>Place trades at just ₹20 per order</div>
+         <button className='text-[#152F46] text-lg mt-4 px-6 py-2 border border-[#152F46] rounded-full hover:text-white hover:bg-[#152F46] transition duration-300'>View Pricing</button>
         </div>
         <div className=' min-w-[340px] h-full'>
-          <div className="min-w-[340px]  h-full">
+          <div className="min-w-[340px]">
             {/* card-1 */}
             <div className="group flex items-center justify-center mt-[74px] max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
               {/* Default Content */}
@@ -206,11 +206,13 @@ function MainPage() {
           </div>
         </div>
         </div>
+
+
         {/* righst side blocck */}
-        <div className='min-w-[390px] h-96'>
-          <div className="min-w-[340px]  h-full">
+        <div className='min-w-[390px] h-full mt-7'>
+          <div className="min-w-[340px]  h-full ">
             {/* card-1 */}
-            <div className="group flex items-center justify-center  max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
+            <div className="group mb-[45px] flex items-center justify-center  max-w-[280px] h-72 rounded-lg border border-slate-500 shadow-2xl relative">
               {/* Default Content */}
           <div className="absolute inset-0 flex items-center justify-between px-4 transition-opacity duration-300 group-hover:opacity-0">
             {/* Left Section */}
@@ -295,10 +297,10 @@ function MainPage() {
         </div>
 
       </div>
-      <div className="flex items-center bg-[#DAEAEB] h-56 py-4 px-12 w-full">
+      <div className="flex items-center bg-[#DAEAEB] h-72 mt-10  py-4 px-12 w-full">
   {/* Left Text Section */}
   <div className="flex-1 ml-5">
-    <div className="text-2xl font-bold">
+    <div className="text-4xl font-bold">
       Simplify your investments with our smart calculators!
     </div>
     <div className="flex gap-x-5 mt-3">
@@ -324,10 +326,10 @@ function MainPage() {
       </div>
     </div>
     <div className='h-96 w-full mt-9'>
-  <div className='flex justify-center text-3xl font-bold'>
+  <div className='flex justify-center text-4xl font-bold'>
     Your Gateway of Smart Investing.
   </div>
-  <div className='flex justify-center text-xl font-medium mb-10'>
+  <div className='flex justify-center text-2xl mt-2 font-medium mb-10'>
     Highlighted features that simplify and enhance the investing experience.
   </div>
   <div className="grid grid-cols-3 ml-28 gap-y-10 justify-center mt-10 mx-auto max-w-[1300px]">
@@ -483,9 +485,9 @@ function MainPage() {
 </div>
 <div className=' text-3xl h-auto py-3 mt-6 bg-[#DAEAEB] '>
   <div className='flex justify-center'>
-    <div className='ml-20'>
+    <div className='ml-20 text-5xl'>
       <div className='mt-3 mb-4   '>How-to Guides for <span className='text-[#064D51] font-bold'>Financial Success</span></div>
-      <div className='text-[#5B5B5B] text-xl'>Learn at your own pace with beginner to expert resources.</div>
+      <div className='text-[#5B5B5B] font-medium text-2xl ml-[80px]'>Learn at your own pace with beginner to expert resources.</div>
     </div>
   
   <img src={sumid} alt="" className='h-[115px] w-[120px] mt-2 ml-40 -mr-28' />
@@ -494,24 +496,24 @@ function MainPage() {
 <div className="flex justify-center gap-36  mt-10 mb-4">
   {/* Card 1 */}
   <div className="relative group">
-    <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
+    <div className="border border-black bg-transparent h-48 w-80 rounded-lg 
                     group-hover:-rotate-3 group-hover:-translate-y-2 
                     transition-transform duration-300 ease-in-out">
     </div>
 
-    <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
+    <div className="absolute top-0 left-0 w-80 h-48 rounded-lg 
                     bg-gradient-to-b from-teal-900 to-teal-600
                     group-hover:rotate-3 group-hover:-translate-y-4 
                     transition-transform duration-300 ease-in-out 
                     shadow-lg p-6">
       <div className="flex items-start justify-between">
         <div>
-          <div className="flex items-center mt-3 gap-2 text-white font-bold text-lg">
+          <div className="flex items-center mt-3 gap-2 text-white font-bold text-xl">
             <span>How to</span>
             <img src={arrow} alt="Arrow" className="w-6 h-4" />
             <img src={vector} alt="Play Icon" className="w-12 h-12 " />
           </div>
-          <div className="text-white mt-1 text-sm">Create a Budget</div>
+          <div className="text-white mt-1 text-lg">Create a Budget</div>
         </div>
 
         <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
@@ -524,7 +526,7 @@ function MainPage() {
       </div>
 
       <div className="absolute bottom-4 left-6">
-        <span className="bg-[#152F46] text-white text-sm px-6 py-1 rounded-full">
+        <span className="bg-[#152F46] text-white text-lg px-6 py-1 rounded-full">
           Beginner
         </span>
       </div>
@@ -533,24 +535,24 @@ function MainPage() {
 
   {/* Card 2 */}
   <div className="relative group">
-    <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
+    <div className="border border-black bg-transparent h-48 w-80 rounded-lg 
                     group-hover:-rotate-3 group-hover:-translate-y-2 
                     transition-transform duration-300 ease-in-out">
     </div>
 
-    <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
+    <div className="absolute top-0 left-0 h-48 w-80 rounded-lg 
                     bg-gradient-to-b from-teal-900 to-teal-600
                     group-hover:rotate-3 group-hover:-translate-y-4 
                     transition-transform duration-300 ease-in-out 
                     shadow-lg p-6">
       <div className="flex items-start justify-between">
         <div>
-          <div className="flex items-center mt-3 gap-2 text-white font-bold text-lg">
+          <div className="flex items-center mt-3 gap-2 text-white font-bold text-xl">
             <span>How to</span>
             <img src={arrow} alt="Arrow" className="w-6 h-4" />
             <img src={vector} alt="Play Icon" className="w-12 h-12 " />
           </div>
-          <div className="text-white mt-1 text-sm">Create a Budget</div>
+          <div className="text-white mt-1 text-lg">Understand Credit scores</div>
         </div>
 
         <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
@@ -563,7 +565,7 @@ function MainPage() {
       </div>
 
       <div className="absolute bottom-4 left-6">
-        <span className="bg-[#152F46] text-white text-sm px-6 py-1 rounded-full">
+        <span className="bg-[#152F46] text-white text-lg px-6 py-1 rounded-full">
           Beginner
         </span>
       </div>
@@ -572,24 +574,24 @@ function MainPage() {
 
   {/* Card 3 */}
   <div className="relative group">
-    <div className="border border-black bg-transparent h-40 w-72 rounded-lg 
+    <div className="border border-black bg-transparent h-48 w-80 rounded-lg 
                     group-hover:-rotate-3 group-hover:-translate-y-2 
                     transition-transform duration-300 ease-in-out">
     </div>
 
-    <div className="absolute top-0 left-0 w-72 h-40 rounded-lg 
+    <div className="absolute top-0 left-0 h-48 w-80 rounded-lg 
                     bg-gradient-to-b from-teal-900 to-teal-600
                     group-hover:rotate-3 group-hover:-translate-y-4 
                     transition-transform duration-300 ease-in-out 
                     shadow-lg p-6">
       <div className="flex items-start justify-between">
         <div>
-          <div className="flex items-center mt-3 gap-2 text-white font-bold text-lg">
+          <div className="flex items-center mt-3 gap-2 text-white font-bold text-xl">
             <span>How to</span>
             <img src={arrow} alt="Arrow" className="w-6 h-4" />
             <img src={vector} alt="Play Icon" className="w-12 h-12 " />
           </div>
-          <div className="text-white mt-1 text-sm">Create a Budget</div>
+          <div className="text-white mt-1 text-lg">Start investing in stocks</div>
         </div>
 
         <div className="w-auto mt-8 h-12 rounded-lg flex justify-center items-center">
@@ -602,7 +604,7 @@ function MainPage() {
       </div>
 
       <div className="absolute bottom-4 left-6">
-        <span className="bg-[#152F46] text-white text-sm px-6 py-1 rounded-full">
+        <span className="bg-[#152F46] text-white text-lg px-6 py-1 rounded-full">
           Beginner
         </span>
       </div>
@@ -680,11 +682,11 @@ Want to explore more insights?
         <h2 className="text-4xl min-w-full font-bold text-teal-900 mb-6 text-center">
           Frequently Asked Questions (FAQs)
         </h2>
-        <p className="text-center text-gray-600 text-lg mb-8">
+        <p className="text-center font-medium text-gray-600 text-lg mb-8">
           Your Guide to Understanding Our Most Discussed Services
         </p>
         
-        <div className="text-xl max-w-3xl mx-auto">
+        <div className="text-2xl max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b">
               <button

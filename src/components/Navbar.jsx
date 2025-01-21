@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-
+import { IoMdSearch } from "react-icons/io";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,15 +16,27 @@ function Navbar() {
           <div className=" font-bold text-lg">Sapphire</div>
         </div>
 
-        <div className="hidden md:flex items-center justify-center ">
-          <div className="hover:cursor-pointer ml-4 mr-4 ">ABOUT</div>
-          <div className="hover:cursor-pointer ml-4 mr-4 ">PRODUCT</div>
-          <div className="hover:cursor-pointer ml-4 mr-4">PRICING</div>
-          <div className="hover:cursor-pointer ">SUPPORT</div>
-          <button className="ml-[350px] mr-10 text-white font-semibold py-2 px-3 rounded-full bg-[#152F46] hover:bg-[#18405d] transition-colors">
-            LOGIN/SIGNUP
-          </button>
-        </div>
+        <div className="hidden md:flex items-center justify-center">
+  <div className="hover:cursor-pointer font-medium hover:scale-105 transition duration-300 ml-4 mr-4">ABOUT</div>
+  <div className="hover:cursor-pointer font-medium hover:scale-105 transition duration-300 ml-4 mr-4">PRODUCT</div>
+  <div className="hover:cursor-pointer font-medium hover:scale-105 transition duration-300 ml-4 mr-4">PRICING</div>
+  <div className="hover:cursor-pointer font-medium hover:scale-105 transition duration-300">SUPPORT</div>
+
+  {/* Search Box with Icon inside */}
+  <div className="relative ml-12 w-96 h-10">
+    <input
+      type="text"
+      placeholder="Search Stocks..."
+      className="w-full h-full pl-10 pr-4 border rounded-full focus:outline-none"
+    />
+    <IoMdSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-xl text-gray-500" />
+  </div>
+
+  <button className="ml-[40px] mr-6 text-white text-sm py-2 px-4 rounded-full bg-[#152F46] hover:bg-[#18405d] transition-colors">
+    LOGIN/SIGNUP
+  </button>
+</div>
+
         
 
         {/* Menu Button (Visible on Small Devices) */}

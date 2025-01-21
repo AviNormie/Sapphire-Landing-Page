@@ -8,13 +8,13 @@ function Footer() {
       <div className="h-40  flex items-center gap-x-44 bg-gradient-to-b from-white to-[#83C5BE]">
         <img className='h-28 w-28 ml-20' src={support} alt="" />
         <div className='hidden lg:block '>
-            <div className='text-2xl mb-1 font-medium'>Get Support Anytime, Anywhere</div>
-            <div className='text-[#808080] mb-1'>We’re just a call, email, or message away to help you with your trading journey.</div>
-            <div className='font-medium flex ' > Have any queries? <span className='text-[#2F7FFF] hover:cursor-pointer ml-1'> Contact Support </span> <img src={arrow2} alt="" className='hover:cursor-pointer h-3 w-3 mt-2 ml-2'/> </div>
+            <div className='text-4xl mb-1 font-semibold'>Get Support Anytime, Anywhere</div>
+            <div className='text-[#808080] mb-1 text-md'>We’re just a call, email, or message away to help you with your trading journey.</div>
+            <div className='font-medium  flex ' > Have any queries? <span className='text-[#2F7FFF] hover:cursor-pointer ml-1'> Contact Support </span> <img src={arrow2} alt="" className='hover:cursor-pointer h-3 w-3 mt-2 ml-2'/> </div>
         </div>
         <button className='py-3 px-8 bg-[#152F46] text-white font-semibold rounded-full'>Lets Connect</button>
       </div>
-      <div className="h-[858px] bg-[#064D51]">
+      <div className="h-[910px] bg-[#064D51]">
         <div className="grid grid-cols-5 gap-8  text-white px-12 py-8">
           <div>
             <div className="font-bold text-lg ">
@@ -64,7 +64,7 @@ function Footer() {
 
           <div>
             <div className="font-bold text-lg mb-4">Follow us:</div>
-            <p>werw</p>
+            <p>Follow us on Social Media</p>
           </div>
         </div>
         <div class='ml-9 mr-9  text-white'>
