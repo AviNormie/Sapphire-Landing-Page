@@ -21,7 +21,9 @@ import Frame1  from '../assets/Frame1.png'
 import frame2  from '../assets/frame2.png'
 import frame3  from '../assets/frame3.png'
 import frame4  from '../assets/frame4.png'
-// import frame5  from '../assets/frame5.png'
+import lol from '../assets/lol.png'
+import lol2 from '../assets/lol2.png'
+import lol3 from '../assets/lol3.png'
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
 function MainPage() {
@@ -62,7 +64,7 @@ function MainPage() {
   const faqs = [
     {
       question: "How do I open a trading and Demat account with your firm?",
-      answer: "Are you Testing me?"
+      answer: "Are you Testing me? GUGU GAGA"
     },
     {
       question: "What services do you offer?",
@@ -70,7 +72,7 @@ function MainPage() {
     },
     {
       question: "Are my investments safe with your firm?",
-      answer: "Are you Testing me?"
+      answer: "Are you Testing me? GUGU GAGA"
     }
   ];
 
@@ -80,7 +82,7 @@ function MainPage() {
   return (
     <>
       <Navbar />
-      <div className="max-w-[650px] ml-12 mr-10 mt-14">
+      <div className="max-w-[650px]  ml-12 mr-10 mt-14">
         {/* Flex container to align text and image in the same row */}
         <div className="flex  items-center">
           {/* Text section */}
@@ -177,15 +179,15 @@ function MainPage() {
           </div>
           {/* Price */}
           <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
-            ₹99*
+            ₹20*
           </div>
-          <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+          <div className="text-[#152F46]  mt-3 text-lg font-semibold">For all trades</div>
           
         </div>
 
         {/* Right Section */}
         <div>
-          <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
+          <img className="h-20 w-20 -mt-28" src={lol} alt="Bank Icon" />
         </div>
       </div>
 
@@ -193,7 +195,7 @@ function MainPage() {
 
           {/* Hover Content */}
           <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-            <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+            <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>20* <span className='text-[17px]    mt-10'>Account opening</span></div>
             <div className="text-slate-100">
               <div className='text-sm ml-2 mt-2 font-thin'>
                 <p>Enjoy a fast hassle-free signup process and </p>
@@ -223,15 +225,15 @@ function MainPage() {
               </div>
               {/* Price */}
               <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
-                ₹99*
+                ₹0*
               </div>
-              <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+              <div className="text-[#152F46]  mt-3 text-lg font-semibold">Maintenance</div>
               
             </div>
 
             {/* Right Section */}
             <div>
-              <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
+              <img className="h-20 w-20 -mt-28" src={lol2} alt="Bank Icon" />
             </div>
           </div>
 
@@ -239,7 +241,7 @@ function MainPage() {
 
               {/* Hover Content */}
               <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+                <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>0* <span className='text-[17px]    mt-10'>Account opening</span></div>
                 <div className="text-slate-100">
                   <div className='text-sm ml-2 mt-2 font-thin'>
                     <p>Enjoy a fast hassle-free signup process and </p>
@@ -265,15 +267,15 @@ function MainPage() {
           </div>
           {/* Price */}
           <div className="flex w-full ml-8 text-[2.5rem] font-bold text-[#152F46]">
-            ₹99*
+            ₹0*
           </div>
-          <div className="text-[#152F46]  mt-3 text-lg font-semibold">Account Opening</div>
+          <div className="text-[#152F46]  mt-3 text-lg font-semibold">Hidden Charges</div>
           
         </div>
 
         {/* Right Section */}
         <div>
-          <img className="h-20 w-20 -mt-28" src={banking} alt="Bank Icon" />
+          <img className="h-20 w-20 -mt-28" src={lol3} alt="Bank Icon" />
         </div>
       </div>
 
@@ -281,7 +283,7 @@ function MainPage() {
 
           {/* Hover Content */}
           <div className="absolute   inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-            <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>99* <span className='text-[17px]    mt-10'>Account opening</span></div>
+            <div className="text-slate-100 flex font-bold ml-3 text-6xl"><span className='text-xl '>₹</span>0* <span className='text-[17px]    mt-10'>Account opening</span></div>
             <div className="text-slate-100">
               <div className='text-sm ml-2 mt-2 font-thin'>
                 <p>Enjoy a fast hassle-free signup process and </p>
@@ -322,7 +324,7 @@ function MainPage() {
 
       {/*  Image Section */}
       <div className="flex-1">
-        <img className="w-auto ml-48 h-52" src={calc} alt="Calculator" />
+        <img className="w-auto ml-64 h-52" src={calc} alt="Calculator" />
       </div>
     </div>
     <div className='h-96 w-full mt-9'>
@@ -394,7 +396,7 @@ function MainPage() {
     {/* Content Before Hover */}
     <div className="absolute inset-0 flex flex-col items-start justify-start px-6 py-6 space-y-4 text-left">
       <img src={three} alt="Stocks" className="w-16 h-16 mb-2" />
-      <h2 className="text-3xl font-bold text-black group-hover:text-white">F$O</h2>
+      <h2 className="text-3xl font-bold text-black group-hover:text-white">F&O</h2>
       <p className="text-lg text-gray-600 transition-opacity duration-300 group-hover:opacity-0">
       Maximize profits with advanced trading options.
       </p>
